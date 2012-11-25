@@ -3,5 +3,5 @@ Receiptmagic::Application.routes.draw do
   resources :users
 
   root to: "users#new"
-  get "auth/google/callback" => 'sessions#create'
+  get "auth/google/callback" => 'sessions#create', as: 'google'
 end
