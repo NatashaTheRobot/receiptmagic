@@ -14,4 +14,13 @@
 class User < ActiveRecord::Base
   attr_accessible :email, :name, :oauth_key, :oauth_secret
   has_many :trips
+
+  def self.create_with_omniauth(auth)
+    create! do |user|
+      user.email = auth["info"]["email"]
+      user.name = auth["info"]["name"]
+      user.oauth_key = auth["credentials"]["token"]
+      user.oauth_secret = auth["credentials"]["secret"]
+    end
+  end
 end
