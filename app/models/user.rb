@@ -25,4 +25,22 @@ class User < ActiveRecord::Base
       user.oauth_secret = auth["credentials"]["secret"]
     end
   end
+
+  def get_receipts
+    #p self.email
+    #p self.oauth_key
+    #p self.oauth_secret
+    #gmail = Gmail.connect(:xoauth,  :email,
+    #                      token:            :oauth_key,
+    #                      secret:           :oauth_secret,
+    #                      consumer_key:     ENV['CONSUMER_KEY'],
+    #                      consumer_secret:  ENV['CONSUMER_SECRET']
+    #)
+    p '3' * 100
+    #p gmail.inbox
+    #gmail.inbox.find(from: 'supportsf@uber.com').each do |email|
+    #  ap email
+    #end
+
+  end
 end

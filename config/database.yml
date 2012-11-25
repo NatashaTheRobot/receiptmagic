@@ -17,7 +17,7 @@ development:
   encoding: unicode
   database: receiptmagic_development
   pool: 5
-  username: Jenny
+  username: nataliamurashev
   password:
   host: localhost
 
@@ -44,7 +44,7 @@ test:
   encoding: unicode
   database: receiptmagic_test
   pool: 5
-  username: Jenny
+  username: nataliamurashev
   password:
   host: localhost
 
@@ -53,6 +53,6 @@ production:
   encoding: unicode
   database: receiptmagic_production
   pool: 5
-  username: Jenny
+  username: nataliamurashev
   password:
   host: localhost
