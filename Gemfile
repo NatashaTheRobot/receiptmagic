@@ -8,6 +8,8 @@ gem 'rails', '3.2.8'
 gem 'pg'
 gem 'omniauth-google'
 gem 'gmail'
+gem 'haml'
+gem 'rake', '0.8.7'
 
 
 # Gems used only for assets and not required
@@ -22,8 +24,10 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-group :test do
+group :test, :development do
   gem 'annotate'
+  gem 'quiet_assets'
+  gem 'awesome_print'
 end
 
 gem 'jquery-rails'
