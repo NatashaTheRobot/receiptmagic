@@ -9,6 +9,7 @@ gem 'pg'
 gem 'omniauth-google'
 gem 'gmail'
 gem 'haml'
+gem 'rake', '0.8.7'
 
 
 # Gems used only for assets and not required

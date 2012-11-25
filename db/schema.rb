@@ -35,7 +35,6 @@ ActiveRecord::Schema.define(:version => 20121124233939) do
     t.string   "oauth_secret"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
-    t.string   "uid"
   end
 
 end
